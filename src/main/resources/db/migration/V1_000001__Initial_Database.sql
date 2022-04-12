@@ -8,8 +8,7 @@ CREATE TABLE dbo.customer (
     email varchar(100) UNIQUE ,
     document varchar(20) UNIQUE ,
     cellphone varchar(15) NULL UNIQUE ,
-    password varchar(255) NOT NULL,
-    active BIT DEFAULT 1,
+    is_active BIT DEFAULT 'TRUE',
     PRIMARY KEY (id)
 );
 
