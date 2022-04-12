@@ -2,13 +2,13 @@ CREATE TABLE dbo.customer (
     id uniqueidentifier NOT NULL UNIQUE,
     created_at datetime NOT NULL,
     updated_at datetime NULL,
-    first_name varchar(50),
-    last_name varchar(50),
+    first_name varchar(50) NOT NULL,
+    last_name varchar(50) NOT NULL,
     birthdate date NOT NULL,
-    email varchar(100) UNIQUE ,
-    document varchar(20) UNIQUE ,
-    cellphone varchar(15) NULL UNIQUE ,
-    is_active BIT DEFAULT 'TRUE',
+    email varchar(100) NOT NULL UNIQUE,
+    document varchar(20) NOT NULL UNIQUE,
+    phone varchar(15) NOT NULL UNIQUE,
+    is_active BIT DEFAULT 1 NOT NULL,
     PRIMARY KEY (id)
 );
 

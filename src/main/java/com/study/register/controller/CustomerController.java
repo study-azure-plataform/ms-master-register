@@ -6,12 +6,13 @@ import com.study.register.usecase.CustomerUseCase;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
 
 @RestController
+@Validated
 @RequestMapping(path = "v1/customer", produces =  MediaType.APPLICATION_JSON_VALUE )
 @RequiredArgsConstructor
 public class CustomerController {
@@ -19,7 +20,7 @@ public class CustomerController {
     private final CustomerUseCase customerUseCase;
 
     @PostMapping
-    public ResponseEntity<CustomerResponse> create(@RequestBody CustomerRequest request){
+    public ResponseEntity<CustomerResponse> create(@Valid @RequestBody CustomerRequest request){
 
         CustomerResponse response = customerUseCase.create(request);
         return ResponseEntity.ok(response);

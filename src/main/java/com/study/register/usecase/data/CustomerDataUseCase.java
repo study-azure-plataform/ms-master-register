@@ -22,7 +22,7 @@ public class CustomerDataUseCase {
 
     private String email;
 
-    private String cellphone;
+    private String phone;
 
     private LocalDate birthdate;
 

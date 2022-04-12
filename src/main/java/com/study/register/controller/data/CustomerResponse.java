@@ -23,7 +23,7 @@ public class CustomerResponse {
 
     private String email;
 
-    private String cellphone;
+    private String phone;
 
     private LocalDate birthdate;
 

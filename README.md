@@ -25,3 +25,6 @@ Use an IDE of your choice to access SQL Server. In you first access using databa
 User: **sa** password: **Docker#0**
 
 After logging in, you must create a new database named **DB-MASTER-REGISTER**
+
+This project uses the **Flyway** framework to create and manage data models. 
+The scripts run automatically and are in resources\db\migration.

@@ -25,7 +25,7 @@ public class CustomerEntity extends AbstractEntity{
 
     private String email;
 
-    private String cellphone;
+    private String phone;
 
     private LocalDate birthdate;
 
