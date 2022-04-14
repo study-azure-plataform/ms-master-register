@@ -1,13 +1,21 @@
+server:
+  port: 8081
+
 spring:
+  application:
+    name: ms-master-register
+
   datasource:
     url: jdbc:sqlserver://localhost:1433;database=DB-MASTER-REGISTER;loginTimeout=30;
     username: sa
     password: Docker#0
     driverClassName: 'com.microsoft.sqlserver.jdbc.SQLServerDriver'
+
   jpa:
     hibernate:
       ddl-auto: none
     show-sql: false
+
   flyway:
     url: jdbc:sqlserver://localhost:1433;databaseName=DB-MASTER-REGISTER;
     user: sa
