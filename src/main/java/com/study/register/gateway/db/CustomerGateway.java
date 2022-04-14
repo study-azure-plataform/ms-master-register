@@ -1,6 +1,6 @@
 package com.study.register.gateway.db;
 
-import com.study.register.gateway.db.data.CustomerEntity;
+import com.study.register.gateway.db.entity.CustomerEntity;
 import com.study.register.gateway.db.repository.CustomerRepository;
 import com.study.register.usecase.data.CustomerDataUseCase;
 import lombok.RequiredArgsConstructor;

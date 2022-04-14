@@ -1,6 +1,6 @@
 package com.study.register.gateway.db.repository;
 
-import com.study.register.gateway.db.data.CustomerEntity;
+import com.study.register.gateway.db.entity.CustomerEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

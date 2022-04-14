@@ -1,4 +1,4 @@
-package com.study.register.gateway.db.data;
+package com.study.register.gateway.db.entity;
 
 
 import lombok.Data;
